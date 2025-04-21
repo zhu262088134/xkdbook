@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>第二个网站</title>
+       <!-- 每过一秒就刷新一次 -->
+       <!-- <meta http-equiv="refresh" content="1"> -->
+         <!-- 定义了这个页面所有链接的默认属性 -->
+       <base target="_blank">
+       <script>
+        document.write("Hello World!")
+        </script>
+        <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+</head>
+<body>
+    <a href="https://www.runoob.com?q='search'" >菜鸟教程</a>
+    <a href="https://www.runoob.com/tags/html-reference.html">html参考手册</a>
+    <form action="/" method="get" id="form1">
+        <label for="name1">用户名:</label>
+        <input type="text" id="name1" name="name" size="20" required autofocus > <br>
+        <label for="password">密码：&nbsp</label>
+        <input type="password" id="password" required><br>
+        <label>测试:</label>
+        <input type="radio" id="radio" name="d" checked>
+        <label for="radio">单选按钮</label>
+        <input type="radio" id="radio2" name="d" >
+        <label for="radio2">单选按钮2</label>
+        <br>
+          <!-- 单选按钮 -->
+        <label>性别:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女</label><br>
+
+        <label for="tel">输入电话号码的</label>
+        <input type="tel" id="tel"><br>
+        <label for="button">定义了一个按钮</label>
+        <input type="button" id="button" value="按这个"><br>
+        <input type="checkbox" id="checkbox" checked>
+        <label for="checkbox">定义了一个复选框</label>
+        <br>
+            <!-- 复选框 -->
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+        <label for="subscribe">订阅推送信息</label>
+        <br>
+        <label for="datetime">定义了一个时间控件</label>
+        <input type="datetime" id="datetime"><br>
+        <label for="email">定义了一个邮件</label>
+        <input type="email" id="email" readonly value="262088134@qq.com"><br>
+        <label for="file">定义了一个上传文件的</label>
+        <input type="file" id="file"><br>
+        <label for="hidden">定义隐藏输入字段</label>
+        <input type="hidden" id="hidden"><br>
+        <label for="image">定义用图片来提交</label>
+        <input type="image" id="image" src="C:\Users\p_nova001\Pictures\Camera Roll\1.jpg" width="200" height="120"><br>
+        <label for="number">只能输入数字</label>
+        <input type="number" id="number"><br>
+        <label for="range">定义一个范围</label>
+        <input type="range" id="range"><br>
+        <label for="search">搜索</label>
+        <input type="search" id="search"><br>
+        <label for="reset">重置</label>
+        <input type="reset" id="reset"><br>
+        <label for="url">url</label>
+        <input type="url" id="url"><br>
+        <label for="sub">提交:</label>
+        <input type="submit" id="submit" value="提交">
+          <!-- 下拉列表 -->
+        <label for="country">国家:</label>
+    <select id="country" name="country">
+        <option value="cn">CN</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+    </form> 
+    <label for="name1" form="form1">这个和名字表单绑定在一起</label>
+</body>
+</html>
