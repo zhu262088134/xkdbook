@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>网页</title>
+<style>
+.a{
+   /* text-align: center; */
+}
+</style>
+</head>
+<body>
+<div class="a">
+<button id="runawayBtn" 
+        style="transition: 0.3s; position: absolute ;">
+  点我试试？😏
+</button><br>
+<button>不是</button>
+</div>
+<script>
+  const btn = document.getElementById('runawayBtn');
+  
+  btn.addEventListener('mouseover', () => {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+    btn.style.transform = `translate(${x}px, ${y}px)`;
+    btn.innerHTML = '抓不到我略略略~ 🏃💨';
+  });
+  btn.addEventListener('click', () => {
+    alert('居然被抓住了！🎉');
+    btn.style.transform = 'translate(0,0)';
+    btn.innerHTML = '再来一次？😈';
+  });
+</script>
+</body>
+</html>

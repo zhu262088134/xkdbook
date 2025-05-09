@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>4.html</title>
+<link rel="stylesheet" type="text/css" href="1.css"> 
+<style type="text/css">
+
+
+#div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+form.submit{
+    background-color: red;
+}
+
+</style>
+<script type="text/javascript">
+function allowDrop(ev)
+{
+	ev.preventDefault();
+}
+
+function drag(ev)
+{
+	ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+	ev.preventDefault();
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br />
+<p id="drag1" draggable="true" ondragstart="drag(event)">这是一段可移动的段落。请把该段落拖入上面的矩形。</p>
+<address draggable="true" ondragstart="drag(event)">
+    作者： <a href="zhu262088134@gmail.com">冰冰大魔王</a>.<br> 
+    邮箱地址:<br>
+    zhu262088134@gmail.com<br>
+    china
+</address>
+<article draggable="false">
+        作者： <a href="zhu262088134@gmail.com">冰冰大魔王</a>.<br> 
+        邮箱地址:<br>
+        zhu262088134@gmail.com<br>
+        china
+</article>
+<form action="/" method="get" id="test3">
+    <label for="test2">账号：</label>
+    <input type="text" id="test2"><br>
+    <label for="password">密码：</label>
+    <input type="password" id="password"><br>
+</form>
+<div id="submit">
+    <input type="submit"  value="提交" form="test3">
+</div> 
+<div class="test1">
+    <p>胸中似有万壑松，劲风过岗却无声</p>
+</div>
+<p class="ex1">一些文本。 Right-to-left 方向。</p>
+<p class="ex2">胸中似有万壑松，劲风过岗却无声</p>
+<ul class="a">
+    <li>篮球</li>
+    <li>排球</li>
+    <li>橄榄球</li>
+</ul>
+<ol class="b">
+   <li>篮球</li>
+    <li>排球</li>
+    <li>橄榄球</li>
+</ol>
+<table >
+    <thead>
+        <tr>
+            <th>姓名</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>张三</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+        </tr>
+        <tr>
+            <td>王五</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

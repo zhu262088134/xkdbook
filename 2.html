@@ -16,7 +16,7 @@
     <a href="https://www.runoob.com/tags/html-reference.html">html参考手册</a>
     <form action="/" method="get" id="form1">
         <label for="name1">用户名:</label>
-        <input type="text" id="name1" name="name" size="20" required autofocus > <br>
+        <input type="text"id="name1" name="name" size="20" required autofocus maxlength="1" > <br>
         <label for="password">密码：&nbsp</label>
         <input type="password" id="password" required><br>
         <label>测试:</label>
@@ -36,11 +36,11 @@
         <input type="tel" id="tel"><br>
         <label for="button">定义了一个按钮</label>
         <input type="button" id="button" value="按这个"><br>
-        <input type="checkbox" id="checkbox" checked>
-        <label for="checkbox">定义了一个复选框</label>
+        <input type="checkbox" id="checkbox" checked >
+        <label for="checkbox" >定义了一个复选框</label>
         <br>
             <!-- 复选框 -->
-        <input type="checkbox" id="subscribe" name="subscribe" checked>
+        <input type="checkbox" id="subscribe" checked >
         <label for="subscribe">订阅推送信息</label>
         <br>
         <label for="datetime">定义了一个时间控件</label>
@@ -66,13 +66,23 @@
         <label for="sub">提交:</label>
         <input type="submit" id="submit" value="提交">
           <!-- 下拉列表 -->
-        <label for="country">国家:</label>
+    <label for="country">国家:</label>
     <select id="country" name="country">
         <option value="cn">CN</option>
         <option value="usa">USA</option>
         <option value="uk">UK</option>
     </select>
+    <select>
+      <option value="volvo" >Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="vw">VW</option>
+      <option value="audi" selected>Audi</option>
+      </select>
     </form> 
     <label for="name1" form="form1">这个和名字表单绑定在一起</label>
+    <!-- <iframe src="C:\Users\p_nova001\新建文件夹\1.html"></iframe> -->
+    <canvas id="myCanvas" width="200" height="100"
+    style="border:1px solid #F00000;">
+    </canvas>
 </body>
 </html>
