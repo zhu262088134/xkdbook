@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>JS</title>  
+<script src="1.js"></script>
+
+</head>
+<body>
+ <p id="demo">这是一个段落</p>
+ <button type="button"  onclick="displayDate()">点一下</button>
+ <button type="button" onclick="alert('欢迎!')">点我!</button>
+ <button type="button" onclick="oy()">点我</button>
+ <p id="demo2">一个段落。</p>
+ <div id="myDIV">一个 DIV。</div>
+ <p id="name2"></p>
+  <p  >你的名字是:</p>
+  <p id="name1"></p>
+ <button type="button" onclick="test2(1,'我')">点我</button>
+ <button type="button" onclick="test3(1,5)">点我</button>
+<script>
+  var person=
+{
+	firstname : "John",
+	lastname  : "Doe",
+	id        :  5566
+};
+  var name =person.firstname;
+  let name1=person.lastname;
+  document.getElementById("name1").innerHTML=name;
+  document.getElementById("name2").innerHTML=name1;
+  document.getElementById("demo2").innerHTML="你好 Dolly";
+  document.getElementById("myDIV").innerHTML="你最近怎么样?";
+</script>
+<p onmouseover="test4()" id="xx">把鼠标放上面试一试</p>
+<p onclick="test5(4)" id="x2">点一下</p>
+<p onclick="test6(3)" id="x3">测试一下switch语句</p>
+<p id="x4">测试一下for循环</p>
+<button type="button" onclick="test7()" >测试for循环</button>
+<button type="button" onclick="message()">测试try catch</button>
+<form action="demo_form.php" method="post" name="form" target="_blank"
+onsubmit="return test8()">
+  <input type="text" name="fname" >
+  <input type="submit" value="提交">
+</form>
+</body>
+</html>
