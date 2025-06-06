@@ -83,14 +83,54 @@ function message()
 }
 function test8(){
   var x = document.forms['form']['fname'].value;
+  var y= document.forms['form']['fname1'].value;
   // if(x>5){
   //   alert('输入的值大于5')
   // }else{
   //   alert('输入的值小于5')
   // }
   if (x == null || x == "") {
-        alert("需要输入名字。");
+         alert("需要输入账号。");
         return false;
     }
+  if (y == null || y == "") {
+        alert("需要输入密码。");
+        return false;
+    }
+  if(x == 1){
+    alert('您输入 \n 的是1');
+    return false;
+  }
+  var z=document.forms["form"]["email"].value;
+  var atpos=z.indexOf("@");
+  var dotpos=z.lastIndexOf(".");
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=z.length){
+    alert("不是一个有效的 e-mail 地址");
+    return false;
+  }
 }
+function test9(){
+   var x=document.getElementById('x1');
+  //  if(x.checkValidity() == false){
+  //   x.setCustomValidity('这个数字必须是小于300大于100的');
+  //   document.getElementById("ceshi").innerHTML = x.validationMessage;
+  //  }else {
+  //       document.getElementById("ceshi").innerHTML = "输入正确";
+  //   }
+    if(x.validity.patternMismatch){
+    x.setCustomValidity('这个数字必须是小于300大于100的');
+    document.getElementById("ceshi").innerHTML = x.validationMessage;
+   }else {
+    document.getElementById("ceshi").innerHTML = "输入正确";
+    }
+}
+ function test10(){
+  let y="let修饰的变量他只能在代码块中使用";
+  document.getElementById("ceshi2").innerHTML = y;
+ }
+ var y=" var修饰的变量可以在整个区域显示";
+ function test11(){
+  document.getElementById("ceshi2").innerHTML =y; 
+ }
  
+

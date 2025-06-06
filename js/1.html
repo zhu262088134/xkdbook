@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8"> 
 <title>JS</title>  
-<script src="1.js"></script>
+<script src="1.js">
+</script>
 
 </head>
 <body>
  <p id="demo">这是一个段落</p>
  <button type="button"  onclick="displayDate()">点一下</button>
- <button type="button" onclick="alert('欢迎!')">点我!</button>
+ <button type="button" onclick="alert('谁让你点的！！！ 生气 ')">点我</button>
  <button type="button" onclick="oy()">点我</button>
  <p id="demo2">一个段落。</p>
  <div id="myDIV">一个 DIV。</div>
@@ -31,6 +32,18 @@
   document.getElementById("name2").innerHTML=name1;
   document.getElementById("demo2").innerHTML="你好 Dolly";
   document.getElementById("myDIV").innerHTML="你最近怎么样?";
+  // 创建一个对象
+var sd = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " 123123" + this.lastName;
+  }
+};
+
+// 显示对象的数据
+document.getElementById("ceshi2").innerHTML = sd.fullName();
 </script>
 <p onmouseover="test4()" id="xx">把鼠标放上面试一试</p>
 <p onclick="test5(4)" id="x2">点一下</p>
@@ -40,8 +53,20 @@
 <button type="button" onclick="message()">测试try catch</button>
 <form action="demo_form.php" method="post" name="form" target="_blank"
 onsubmit="return test8()">
-  <input type="text" name="fname" >
+  <label for="fname">账号:</label>
+  <input type="text" name="fname"  max="3" ><br>
+  <label for="fname1">密码:</label>
+  <input type="text" name="fname1" > <br>
+  <label for="email">邮箱:</label>
+  <input type="text" name="email" > <br>
   <input type="submit" value="提交">
 </form>
+   <label for="x1">填写数字大于100小于300的</label><br>
+   <input id="x1" type="number"  min="100" max="300"  required >
+   <button onclick="test9()">提交</button>
+   <p id="ceshi"></p>
+   <button type="button" onclick="test10()">显示let特性</button>
+   <p id="ceshi2"></p>
+    <button type="button" onclick="test11()">显示var特性</button>
 </body>
 </html>
