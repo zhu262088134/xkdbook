@@ -1,0 +1,57 @@
+/*这是css文件*/
+.a{
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+}
+.b{
+    font-size: 14px;
+    color: #999999;
+}
+.c{
+    font-size: 18px;
+    color: #333333;
+    text-indent: 2em;!important; /*这个优先级是最高的 慎用*/
+}
+.d{
+    font-size: 18px;
+    color: #333333;
+    text-indent: 2em;
+}
+.e{
+    text-align: center;
+}
+div span{
+    color: red;
+}
+div>span{
+    color: red;
+}
+p{
+    color: red;
+    /*font-size: 27px;*/
+}
+.a1{
+    color: blue;
+
+}
+.a3{
+    display: inline-block;
+}
+.a4{
+    display: inline-block;
+}
+.a5{
+    width: 500px;
+    height: 300px;
+    background-image: url("../../images/1.png");
+    background-repeat: no-repeat;
+    background-size: 500px 300px;
+    background-color: red;
+    background-attachment: local;
+    box-sizing: border-box;/*内减模式，你设置了padding和border就不会撑大盒子*/
+}
+p:nth-child(5){
+    color: #00FF00;
+
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米手机系列</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-box {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            float: right;
+
+        }
+        .product-box1 {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            float: left;
+
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .product-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 16px;
+            color: #ff6600;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" >
+
+    <!-- 第一个产品 -->
+    <div class="product-box1" >
+        <img src="https://example.com/xiaomi15.jpg" alt="Xiaomi 15 系列" class="product-image">
+        <div class="product-name">XIAOMI 15 系列</div>
+        <div class="product-description">徕卡光学 | 晓龙®8至尊版</div>
+        <!-- 价格部分可以省略，因为原图中没有具体价格 -->
+    </div>
+
+    <!-- 第二个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/mixflip2.jpg" alt="Xiaomi MIX Flip 2" class="product-image">
+        <div class="product-name">Xiaomi MIX Flip 2</div>
+        <div class="product-description">4.01英寸多功能超大外屏</div>
+        <div class="product-price">5999元起</div>
+    </div>
+
+    <!-- 第三个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/redmik80.jpg" alt="REDMI K80 至尊版" class="product-image">
+        <div class="product-name">REDMI K80 至尊版</div>
+        <div class="product-description">天玑 9400+|7410mAh超长续航|大师...</div>
+        <div class="product-price">2599元起</div>
+    </div>
+
+    <!-- 第四个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/xiaomi15spro.jpg" alt="Xiaomi 15S Pro" class="product-image">
+        <div class="product-name">Xiaomi 15S Pro</div>
+        <div class="product-description">小米 15周年特别设计</div>
+        <div class="product-price">5499元起</div>
+    </div>
+
+    <!-- 第五个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/civi5pro.jpg" alt="Xiaomi Civi 5 Pro" class="product-image">
+        <div class="product-name">Xiaomi Civi 5 Pro</div>
+        <div class="product-description">徕卡光学 Summilux 高速镜头 | 6000...</div>
+        <div class="product-price">2999元起</div>
+    </div>
+
+    <!-- 第六个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/turbo4pro.jpg" alt="REDMI Turbo 4 Pro" class="product-image">
+        <div class="product-name">REDMI Turbo 4 Pro</div>
+        <div class="product-description">Turbo 4 Pro 好看，更能打!</div>
+        <div class="product-price">1899元起 2199元</div>
+    </div>
+
+    <!-- 第七个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/ultra.jpg" alt="Xiaomi 15 Ultra" class="product-image">
+        <div class="product-name">Xiaomi 15 Ultra</div>
+        <div class="product-description">暗夜之眼 徕卡光学</div>
+        <div class="product-price">6499元起</div>
+    </div>
+
+    <!-- 第八个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/turbo4.jpg" alt="REDMI Turbo 4" class="product-image">
+        <div class="product-name">REDMI Turbo 4</div>
+        <div class="product-description">REDMI Turbo 4 好看又能打</div>
+        <div class="product-price">1699元起 1999元</div>
+    </div>
+
+    <!-- 第九个产品 -->
+    <div class="product-box">
+        <img src="https://example.com/redmi14c.jpg" alt="Redmi 14C" class="product-image">
+        <div class="product-name">Redmi 14C</div>
+        <div class="product-description">【持久续航】5160mAh 大电池</div>
+        <div class="product-price">469元起</div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
